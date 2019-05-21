@@ -1,0 +1,127 @@
+
+@font-face {
+    font-family: 'old_standard_tt';
+    src: url('webfontkit/oldstandard-regular-webfont.eot');
+    src: url('webfontkit/oldstandard-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfontkit/oldstandard-regular-webfont.woff2') format('woff2'),
+         url('webfontkit/oldstandard-regular-webfont.woff') format('woff'),
+         url('webfontkit/oldstandard-regular-webfont.ttf') format('truetype'),
+         url('webfontkit/oldstandard-regular-webfont.svg#old_standard_ttregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+.grid {
+
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    max-width: 392px;
+    grid-gap: 3px;
+    
+}
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    color: #000000;
+    font-family: 'old_standard_tt';
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.dcolor {
+color: rgb(189, 196, 196);
+}
+li:hover:not(.none) {
+    border-radius: 25%;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%;
+    -ms-border-radius: 25%;
+    -o-border-radius: 25%;
+    color: #ffffff;
+    font-size: 30px;
+    border: 2px solid rgb(253, 193, 193);
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.mcolor {
+    font-size: 20px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+h1 {
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'old_standard_tt';
+}
+.none {
+    background-color: rgb(253, 193, 193);
+    font-size: 18px;
+}
+.video {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 45%;
+    z-index: -100;
+}
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.calendar {
+    position: absolute;
+    
+    top: 200px;
+    left: 75px;
+}
+.backward {
+    position: absolute;
+    top: 13px;
+    left: 50px;
+    z-index: 100;
+    font-size: 30px;
+}
+.forward {
+    position: absolute;
+    top: 13px;
+    left: 302px;
+    z-index: 100;
+    font-size: 30px;
+} 
+.mark {
+    color: white;
+    font-size: 30px;
+    border: 2px solid  rgb(253, 193, 193);
+}
+/*.dayoff {
+    background-color: rgb(253, 193, 193);
+}*/
