@@ -11,25 +11,24 @@
     font-style: normal;
 }
 
-ul{
+ul {
     padding: 0;
     margin: 0;
 }
-.grid {
 
+.grid {
     display: grid;
     grid-template-columns: 50px 50px 50px 50px 50px 50px 50px;
     grid-template-rows: 50px 50px 50px 50px 50px 50px;
     max-width: 392px;
-    grid-gap: 3px;
-    
+    grid-gap: 3px;  
 }
+
 li {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    border: 1px solid #ffffff;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -45,15 +44,16 @@ li {
 }
 
 .dcolor {
-color: rgb(189, 196, 196);
+    color: rgb(189, 196, 196);
 }
+
 li:hover:not(.none) {
     border-radius: 25%;
     -webkit-border-radius: 25%;
     -moz-border-radius: 25%;
     -ms-border-radius: 25%;
     -o-border-radius: 25%;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     font-size: 30px;
     border: 2px solid rgb(253, 193, 193);
     transition: all .3s ease-in-out;
@@ -62,66 +62,78 @@ li:hover:not(.none) {
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
 }
+
 .mcolor {
     font-size: 20px;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
 }
+
 h1 {
     font-size: 40px;
     margin: 10px;
     text-align: center;
     font-family: 'old_standard_tt';
+    color: rgb(255, 255, 255);
 }
+
 .none {
     background-color: rgb(253, 193, 193);
     font-size: 18px;
 }
+
 .video {
     position: relative;
     height: 100%;
     width: 100%;
     overflow: hidden;
     padding-top: 45%;
-    z-index: -100;
+    z-index: -1;
 }
+
 video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
+
 .calendar {
     position: absolute;
-    
     top: 200px;
     left: 75px;
+    z-index: 0;
 }
+
 .backward {
     position: absolute;
     top: 13px;
     left: 50px;
     z-index: 100;
     font-size: 30px;
+    color:  rgb(255, 255, 255);
 }
+
 .forward {
     position: absolute;
     top: 13px;
     left: 302px;
     z-index: 100;
     font-size: 30px;
+    color:  rgb(255, 255, 255);
 } 
+
 .mark {
-    color: white;
+    color:  rgb(255, 255, 255);
     font-size: 30px;
     border: 2px solid  rgb(253, 193, 193);
 }
+
 /*.dayoff {
     background-color: rgb(253, 193, 193);
 }*/
